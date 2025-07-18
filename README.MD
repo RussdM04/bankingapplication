@@ -33,11 +33,11 @@ A full-featured online banking web app built using Spring Boot and Java EE. Buil
 
 ## 📁 Folder Structure
 banking/
-├── controller/ # Handles HTTP requests
-├── model/ # Contains entity classes
-├── repository/ # Interfaces for database access
-├── service/ # Business logic layer
-├── config/ # Spring Security and application config
-├── templates/ # Thymeleaf HTML templates
-├── static/ # CSS, JS, images
-└── application.properties # Configuration for database, server, etc.
+### ├── controller/ # Handles HTTP requests
+### ├── model/ # Contains entity classes
+### ├── repository/ # Interfaces for database access
+### ├── service/ # Business logic layer
+### ├── config/ # Spring Security and application config
+### ├── templates/ # Thymeleaf HTML templates
+### ├── static/ # CSS, JS, images
+### └── application.properties # Configuration for database, server, etc.
