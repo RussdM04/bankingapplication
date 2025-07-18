@@ -33,23 +33,11 @@ A full-featured online banking web app built using Spring Boot and Java EE. Buil
 
 ## 📁 Folder Structure
 banking/
-├── controller/
-├── model/
-├── repository/
-├── service/
-├── config/
-├── templates/
-├── static/
-└── application.properties
-
----
-
-## 📽️ Demo
-
-Check out the demo video here: [YouTube Link](https://yourlink.com)
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
+├── controller/ # Handles HTTP requests
+├── model/ # Contains entity classes
+├── repository/ # Interfaces for database access
+├── service/ # Business logic layer
+├── config/ # Spring Security and application config
+├── templates/ # Thymeleaf HTML templates
+├── static/ # CSS, JS, images
+└── application.properties # Configuration for database, server, etc.
