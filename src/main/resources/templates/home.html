@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Home page template using Thymeleaf templating engine -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <!-- Header section with navigation and user info -->
+    <div class="header">
+        <div class="header-left">
+            <h1 style="margin-right: 20px;">Home</h1>
+            <div class="nav-links">
+                <a th:href="@{/home}" class="active">Home</a>
+                <a th:href="@{/about}">About</a>
+                <a th:href="@{/map}">Map</a>
+                <a th:href="@{/account/dashboard}">Dashboard</a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="user-info" th:if="${username}">
+                Welcome, <span th:text="${username}">User</span>
+            </div>
+            <a th:href="@{/logout}" class="logout-btn">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main content container -->
+    <div class="container" style="text-align: center;">
+        <!-- Welcome section -->
+        <div class="content-section">
+            <h2 style="color: #0062cc; text-transform: uppercase; margin-bottom: 10px;">
+                Welcome to Our Platform
+            </h2>
+            <p style="font-size: 1.1rem; color: #555;">
+                Thank you for logging in. You now have access to all our features and services.
+            </p>
+        </div>
+
+        <hr style="width: 60%; margin: 30px auto; border: 0; height: 1px; background: #ccc;">
+
+        <!-- Quick links section -->
+        <div class="content-section">
+            <h2 style="color: #0062cc; text-transform: uppercase; margin-bottom: 15px;">
+                Quick Links
+            </h2>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a th:href="@{/about}" class="btn btn-primary">Learn More About Us</a>
+                <a th:href="@{/map}" class="btn btn-success">View the Interactive Map</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

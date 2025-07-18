@@ -1,0 +1,195 @@
+/* Base Styles for Dashboard Page */ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #b5b8ba; /* Soft light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for dashboard */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h2 {
+    color: #0062cc;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Account Balance Display */
+.display-4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Success Button (Add Money) */
+.btn-success {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Success Button hover effect */
+.btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+/* Danger Button (Withdraw Money) */
+.btn-danger {
+    background-color: #dc3545;
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Danger Button hover effect */
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+}
+
+/* Secondary Button (Logout & Home) */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+/* Secondary Button hover effect */
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
+}
+
+/* Form Styling */
+form .form-label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Input Styling */
+input[type="number"], select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="number"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    background-color: #fff;
+}
+
+/* Logout & Home Button Container */
+.mt-4 {
+    text-align: center;
+}
+
+.mt-4 a {
+    padding: 12px 30px;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Logout & Home Button hover effect */
+.mt-4 a:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
+}
+
+.transactions-container {
+    max-height: 300px; /* Set a fixed height */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    border: 1px solid #ddd; /* Optional: Adds a border */
+    padding: 10px;
+}
+
+.transactions-container table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+}
+
+.section-heading {
+    color: #0062cc;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
